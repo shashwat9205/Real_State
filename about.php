@@ -46,7 +46,7 @@
       
       <div class="col-lg-6 mb-4 mb-lg-0">
         <div class="company-img text-center">
-          <img src="images/company.png" alt="Company Image">
+          <img src="images/company.png" class=" img-fluid" alt="Company Image">
         </div>
       </div>
 

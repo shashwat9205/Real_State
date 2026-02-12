@@ -78,10 +78,10 @@
 
 
         <div class="col-lg-3 col-md-6">
-          <div class="card property-card h-100">
+          <div class="card property-card2 h-100">
 
-            <div class="property-img">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top" alt="property">
+            <div class="property-img2">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top" alt="property2">
 
               <span class="badge bg-success badge-featured">FEATURED</span>
               <span class="badge bg-danger badge-status">SOLD</span>
@@ -91,14 +91,14 @@
 
 
               <h6 class="fw-bold">
-                <a href="property-details.html" class="property-link">
+                <a href="property-details.html" class="property-link2">
                   8480 Sulphur Springs Drive
                 </a>
               </h6>
 
               <p class="text-muted small mb-3">Brooklyn, NY 11234</p>
 
-              <div class="property-info d-flex justify-content-between small text-muted">
+              <div class="property-info2 d-flex justify-content-between small text-muted">
                 <span>🏢 3030 sq ft</span>
                 <span>🛏 8 Rooms</span>
                 <span>📅 2016</span>
@@ -110,10 +110,10 @@
 
 
         <div class="col-lg-3 col-md-6">
-          <div class="card property-card h-100">
+          <div class="card property-card2 h-100">
 
-            <div class="property-img">
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="card-img-top" alt="property">
+            <div class="property-img2">
+              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="card-img-top" alt="property2">
 
               <span class="badge bg-success badge-featured">FEATURED</span>
               <span class="badge bg-warning text-dark badge-status">RENT</span>
@@ -122,14 +122,14 @@
             <div class="card-body">
 
               <h6 class="fw-bold">
-                <a href="property-details.html" class="property-link">
+                <a href="property-details.html" class="property-link2">
                   764 W. Manor Station Drive
                 </a>
               </h6>
 
               <p class="text-muted small mb-3">Elmhurst, NY 11370</p>
 
-              <div class="property-info d-flex justify-content-between small text-muted">
+              <div class="property-info2 d-flex justify-content-between small text-muted">
                 <span>🏢 3445 sq ft</span>
                 <span>🛏 4 Rooms</span>
                 <span>📅 2008</span>
@@ -142,10 +142,10 @@
 
 
         <div class="col-lg-3 col-md-6">
-          <div class="card property-card h-100">
+          <div class="card property-card2 h-100">
 
-            <div class="property-img">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top" alt="property">
+            <div class="property-img2">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top" alt="property2">
 
               <span class="badge bg-success badge-featured">FEATURED</span>
               <span class="badge bg-danger badge-status">SOLD</span>
@@ -155,14 +155,14 @@
 
 
               <h6 class="fw-bold">
-                <a href="property-details.html" class="property-link">
+                <a href="property-details2.html" class="property-link2">
                   8480 Sulphur Springs Drive
                 </a>
               </h6>
 
               <p class="text-muted small mb-3">Brooklyn, NY 11234</p>
 
-              <div class="property-info d-flex justify-content-between small text-muted">
+              <div class="property-info2 d-flex justify-content-between small text-muted">
                 <span>🏢 3030 sq ft</span>
                 <span>🛏 8 Rooms</span>
                 <span>📅 2016</span>
@@ -174,10 +174,10 @@
 
 
         <div class="col-lg-3 col-md-6">
-          <div class="card property-card h-100">
+          <div class="card property-card2 h-100">
 
-            <div class="property-img">
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="card-img-top" alt="property">
+            <div class="property-img2">
+              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="card-img-top" alt="property2">
 
               <span class="badge bg-success badge-featured">FEATURED</span>
               <span class="badge bg-warning text-dark badge-status">RENT</span>
@@ -186,14 +186,14 @@
             <div class="card-body">
 
               <h6 class="fw-bold">
-                <a href="property-details.html" class="property-link">
+                <a href="property-details.html" class="property-link2">
                   764 W. Manor Station Drive
                 </a>
               </h6>
 
               <p class="text-muted small mb-3">Elmhurst, NY 11370</p>
 
-              <div class="property-info d-flex justify-content-between small text-muted">
+              <div class="property-info2 d-flex justify-content-between small text-muted">
                 <span>🏢 3445 sq ft</span>
                 <span>🛏 4 Rooms</span>
                 <span>📅 2008</span>
@@ -234,12 +234,12 @@
 
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 Villa called Archangel
               </a>
             </h6>
 
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 3</span>
               <span>🛁 1</span>
               <span>📅 2019</span>
@@ -259,11 +259,11 @@
           </div>
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 House on the Hollywood
               </a>
             </h6>
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 3</span>
               <span>🛁 2</span>
               <span>📅 2017</span>
@@ -285,12 +285,12 @@
 
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 Villa called Archangel
               </a>
             </h6>
 
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 3</span>
               <span>🛁 1</span>
               <span>📅 2019</span>
@@ -310,11 +310,11 @@
           </div>
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 House on the Hollywood
               </a>
             </h6>
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 3</span>
               <span>🛁 2</span>
               <span>📅 2017</span>
@@ -354,12 +354,12 @@
 
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 Modern House for Rent
               </a>
             </h6>
 
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 4</span>
               <span>🛁 2</span>
               <span>📅 2018</span>
@@ -380,12 +380,12 @@
 
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 Modern House for Rent
               </a>
             </h6>
 
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 4</span>
               <span>🛁 2</span>
               <span>📅 2018</span>
@@ -406,12 +406,12 @@
 
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 Modern House for Rent
               </a>
             </h6>
 
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 4</span>
               <span>🛁 2</span>
               <span>📅 2018</span>
@@ -432,12 +432,12 @@
 
           <div class="recent-body">
             <h6>
-              <a href="property-details.html" class="property-link">
+              <a href="property-details.html" class="property-link2">
                 Modern House for Rent
               </a>
             </h6>
 
-            <div class="property-icons">
+            <div class="property-icons2">
               <span>🛏 4</span>
               <span>🛁 2</span>
               <span>📅 2018</span>
