@@ -10,12 +10,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
 <body>
 
-<?php include "./components/header.php"; ?>
+<?php include "./assest/components/header.php"; ?>
+
 
 
 <section class="property-banner d-flex align-items-center">
@@ -93,7 +94,7 @@
 
         <!-- Left Image -->
         <div class="col-lg-4">
-          <img src = "./images/hero-banner.png" class="img-fluid property-img">
+          <img src = "./assest/images/hero-banner.png" class="img-fluid property-img">
         </div>
 
         <!-- Right Content -->
@@ -138,7 +139,7 @@
       <div class="row align-items-center">
 
         <div class="col-lg-4">
-          <img src = "./images/hero-banner.png" class="img-fluid property-img">
+          <img src = "./assest/images/hero-banner.png" class="img-fluid property-img">
         </div>
 
         <div class="col-lg-8">
@@ -180,7 +181,7 @@
 
         <!-- Left Image -->
         <div class="col-lg-4">
-          <img src="./images/hero-banner.png" class="img-fluid property-img">
+          <img src="./assest/images/hero-banner.png" class="img-fluid property-img">
         </div>
 
         <!-- Right Content -->
@@ -225,7 +226,7 @@
       <div class="row align-items-center">
 
         <div class="col-lg-4">
-          <img src="./images/hero-banner.png" class="img-fluid property-img">
+          <img src="./assest/images/hero-banner.png" class="img-fluid property-img">
         </div>
 
         <div class="col-lg-8">
@@ -267,7 +268,7 @@
 
         <!-- Left Image -->
         <div class="col-lg-4">
-          <img src="./images/hero-banner.png" class="img-fluid property-img">
+          <img src="./assest/images/hero-banner.png" class="img-fluid property-img">
         </div>
 
         <!-- Right Content -->
@@ -312,7 +313,7 @@
       <div class="row align-items-center">
 
         <div class="col-lg-4">
-          <img src="./images/hero-banner.png" class="img-fluid property-img">
+          <img src="./assest/images/hero-banner.png" class="img-fluid property-img">
         </div>
 
         <div class="col-lg-8">
@@ -385,7 +386,7 @@
 
 
 
-<?php include "./components/footer.php"; ?>
+<?php include "./assest/components/footer.php"; ?> 
 
 
 

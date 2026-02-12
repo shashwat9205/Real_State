@@ -10,12 +10,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
 <body>
 
-<?php include "./components/header.php"; ?>
+<?php include "./assest/components/header.php"; ?>
 
 
 
@@ -40,29 +40,30 @@
 
         <div class="col-lg-5 h-60">
             <div class="office-content">
-                <p class=" text-muted">Morbi mollis elit vitae elit molestie lobortis. Cras eu purus ipsum. Aliquam et ullamcorper nisl. 
-                    Nam sem justo, sagittis sit amet sem at, mollis congue eros. Quisque vel mattis eros. Proin euismod
-                     massa id est finibus, rutrum ornare velit pellentesque. Ut arcu magna, interdum eget egestas eget, 
-                     sagittis a libero. Donec felis tellus, vehicula at purus condimentum,
-                      hendrerit dictum odio. Vivamus et condimentum sapien.</p>
+              <h5 class=" text-muted">Let’s Build Your Golden Future Together</h5>
+                <p class=" text-muted">
+
+At GoldNest 369 Properties, we don’t just facilitate transactions — we curate exceptional real estate experiences. Whether you are seeking an ultra-luxury residence, a strategic commercial investment, or a high-value plot in a prime location, our dedicated team is prepared to provide personalized attention and discreet, professional guidance tailored to your goals.
+
+Every client journey begins with a conversation. We take the time to understand your vision, your lifestyle preferences, and your long-term aspirations — ensuring that every recommendation aligns with your expectations of quality, elegance, and value.</p>
 
                       </div>
 
                       <div class="col-lg-6 d-flex align-items-center">
 
-                        <img class=" h-100 " src="images/contact1.png" alt="">
+                        <img class=" h-100 " src="./assest/images/contact1.png" alt="">
 
-                        <div class="details-contact ms-3 ">
+                        <div class="details-contact ms-3 mt-4">
                         <p class="text-muted">Call Us</p>
-                        <p class=" ">+9199999999</p>
+                        <p class=" ">+919876543210</p>
                         </div>
 
 
-                        <img class=" mb-2 h-100" src="images/contact2.png" alt="">
+                        <img class=" mb-2 h-100" src="./assest/images/contact2.png" alt="">
 
                         <div class="details-contact ms-3 ">
                         <p class="text-muted">Have any Questions?</p>
-                        <p class=" ">info@stylemixthemes.net</p>
+                        <a class=" ">info@goldnest369.com</a>
                         </div>
 
 
@@ -139,7 +140,7 @@
 
         
         <div class="contact-person d-flex mb-4">
-          <img src="images/leader1.png" alt="">
+          <img src="./assest/images/leader1.png" alt="">
           <div class="ms-3">
             <h6 class="mb-1">Berg Devien</h6>
             <p class="small text-muted mb-1">Head of Communications</p>
@@ -150,7 +151,7 @@
 
        
         <div class="contact-person d-flex">
-          <img src="images/leader2.png" alt="">
+          <img src="./assest/images/leader2.png" alt="">
           <div class="ms-3">
             <h6 class="mb-1">Priscilla Sorvino</h6>
             <p class="small text-muted mb-1">Head of Communications</p>
@@ -224,7 +225,7 @@
 
 
 
-<?php include "./components/footer.php"; ?>
+<?php include "./assest/components/footer.php"; ?> 
 
 
 

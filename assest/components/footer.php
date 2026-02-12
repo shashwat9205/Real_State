@@ -11,7 +11,7 @@
           <li><a href="#">Apartment Low to hide</a></li>
           <li><a href="#">Offices for Buy</a></li>
           <li><a href="#">Offices for Rent</a></li>
-          <li><a href="#">More ></a></li>
+          
         </ul>
       </div>
 
@@ -23,18 +23,18 @@
           <li><a href="#">Las Vegas Apartments</a></li>
           <li><a href="#">Sacramento Townhome</a></li>
           <li><a href="#">San Francisco Offices</a></li>
-          <li><a href="#">More ></a></li>
+          
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4">
         <h6 class="footer-title">Quick Links</h6>
         <ul class="footer-links">
-          <li><a href="#">Pricing Plans</a></li>
+          <li><a href="blog.php">Blog</a></li>
           <li><a href="#">Our Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">More ></a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+          
         </ul>
       </div>
 
@@ -82,3 +82,59 @@
   </div>
 
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="enquireModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content enquire-modal">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Enquire Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+
+          <div class="mb-3">
+            <input type="text" class="form-control enquire-input"
+              placeholder="Full Name*" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control enquire-input"
+              placeholder="Email Address*" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="tel" class="form-control enquire-input"
+              placeholder="Phone Number">
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control enquire-input"
+              rows="4" placeholder="Your Message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            Submit Enquiry
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>

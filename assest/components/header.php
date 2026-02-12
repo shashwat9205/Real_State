@@ -3,7 +3,7 @@
 
     
     <a class="navbar-brand fw-bold" href="#">
-      DreamEstate
+      GoldNest 369
     </a>
 
     
@@ -21,7 +21,10 @@
       </ul>
 
       
-      <a href="#" class="btn btn-primary px-4">Enquire</a>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquireModal">
+  Enquire
+</button>
+
 
     </div>
   </div>

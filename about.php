@@ -10,12 +10,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
 <body>
 
-<?php include "./components/header.php"; ?>
+<?php include "./assest/components/header.php"; ?>
 
 
 <section class="about-banner d-flex align-items-center">
@@ -46,7 +46,7 @@
       
       <div class="col-lg-6 mb-4 mb-lg-0">
         <div class="company-img text-center">
-          <img src="images/company.png" class=" img-fluid" alt="Company Image">
+          <img src="./assest/images/company.png" class=" img-fluid" alt="Company Image">
         </div>
       </div>
 
@@ -56,19 +56,17 @@
         
         <div class="d-flex align-items-center mb-3">
           <div class="company-logo me-2">🏠</div>
-          <h4 class="mb-0 fw-bold">DreamEstate</h4>
+          <h4 class="mb-0 fw-bold">About GoldNest 369</h4>
         </div>
 
         <p class="lead">
-          At Property Real Estate Company, we believe that when it
-          comes to finding a home what’s outside the front door is just
-          as important as what’s behind it.
+          At GoldNest 369 Properties, we specialize in delivering premium real estate solutions that combine luxury, value, and trust. 
+          We believe that every property is more than an investment — it is a milestone in your journey.
         </p>
 
         <p>
-          That’s why we go beyond the typical listings, by sourcing insights
-          straight from locals and offering neighborhood map overlays to give
-          people a deeper understanding of what living in a home and neighborhood is really like.
+          With deep market knowledge and a client-first approach, we assist buyers, 
+          sellers, and investors in making confident and secure real estate decisions.
         </p>
 
         <p>
@@ -78,15 +76,15 @@
 
        
         <div class="company-links mt-4">
-          <a href="#" class="company-link">
+          <a href="blog.php" class="company-link">
             📘 <span>Our Blog</span>
           </a>
 
-          <a href="#" class="company-link">
+          <!-- <a href="#" class="company-link">
             🛠 <span>Our Services</span>
-          </a>
+          </a> -->
 
-          <a href="#" class="company-link">
+          <a href="contact.php" class="company-link">
             📞 <span>Contact Us</span>
           </a>
         </div>
@@ -121,7 +119,7 @@
         <div class="leader-card">
 
           <div class="leader-img">
-            <img src="images/leader1.png" alt="">
+            <img src="./assest/images/leader1.png" alt="">
           </div>
 
           <div class="leader-content">
@@ -149,7 +147,7 @@
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="leader-card">
           <div class="leader-img">
-            <img src="images/leader2.png" alt="">
+            <img src="./assest/images/leader2.png" alt="">
           </div>
           <div class="leader-content">
             <h5>Jennifer Barton</h5>
@@ -175,7 +173,7 @@
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="leader-card">
           <div class="leader-img">
-            <img src="images/leader3.png" alt="">
+            <img src="./assest/images/leader3.png" alt="">
           </div>
           <div class="leader-content">
             <h5>Nick Swift</h5>
@@ -265,7 +263,7 @@
 
 
 
-<?php include "./components/footer.php"; ?>
+<?php include "./assest/components/footer.php"; ?> 
 
 
 

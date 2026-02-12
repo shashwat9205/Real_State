@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Real Estate</title>
 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
 
   <!-- header  -->
 
-  <?php include "./components/header.php"; ?>
+  <?php include "./assest/components/header.php"; ?>
 
 
 
@@ -26,8 +27,18 @@
 
   <section class="hero-section d-flex align-items-center">
     <div class="container text-center text-white">
-      <h5 class="mb-3 text-uppercase">The Best Way To</h5>
-      <h1 class="display-4 fw-bold mb-4">Find Your Perfect Home</h1>
+      <h1 class="display-4 fw-bold mb-4">Your Trusted Partner in</h1>
+      <h2 class="mb-3 text-uppercase">Premium Real Estate</h2>
+
+      <div class="productss">
+        <span>Residential</span>   |
+        <span>Commercial</span>   |
+        <span>Luxury Villas</span>   |
+        <span>Plots</span>
+
+
+      </div>
+      
 
       <div class="row justify-content-center">
        <div class="col-lg-8 ">
@@ -70,7 +81,7 @@
       <div class="d-flex justify-content-between align-items-center mb-5">
         <h1 class="fw-bold">Featured Properties</h1>
         <div class=" text-primary fw-semibold">
-          🏠 1,300+ AVAILABLE PROPERTIES
+          🏠 <a href="property.php" class="section-link">View more</a>
         </div>
       </div>
 
@@ -218,7 +229,7 @@
 
     <div class="d-flex justify-content-between align-items-center mb-5">
       <h2 class="fw-bold">Recent Properties for Sold</h2>
-      <a href="#" class="section-link">ALL PROPERTIES FOR SOLD</a>
+      <a href="property.php" class="section-link">ALL PROPERTIES FOR SOLD</a>
     </div>
 
     <div class="row g-4">
@@ -338,7 +349,7 @@
 
     <div class="d-flex justify-content-between align-items-center mb-5">
       <h2 class="fw-bold">Recent Properties for Rent</h2>
-      <a href="#" class="section-link">ALL PROPERTIES FOR RENT</a>
+      <a href="property.php" class="section-link">ALL PROPERTIES FOR RENT</a>
     </div>
 
     <div class="row g-4">
@@ -576,7 +587,6 @@
 <section class="why-section py-5">
   <div class="container">
 
-    
     <div class="text-center mb-5">
       <h2 class="why-title">Why Choose Us</h2>
       <div class="divider"></div>
@@ -584,46 +594,61 @@
 
     <div class="row text-center">
 
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="why-box">
-          <div class="why-icon">👥</div>
-          <h5>TRUSTED BY THOUSANDS</h5>
-          <p>
-            10 new offers every day. 350 offers on site,
-            trusted by a community of thousands of users.
-          </p>
-        </div>
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="why-box">
+      <div class="why-icon">
+        <i class="bi bi-award-fill"></i>
       </div>
-
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="why-box">
-          <div class="why-icon">📄</div>
-          <h5>WIDE RANGE OF PROPERTIES</h5>
-          <p>
-            With a robust selection of popular properties on hand,
-            as well as leading properties from real estate experts.
-          </p>
-        </div>
-      </div>
-
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="why-box">
-          <div class="why-icon">🏦</div>
-          <h5>FINANCING MADE EASY</h5>
-          <p>
-            Our stress-free finance department can find financial
-            solutions to save you money.
-          </p>
-        </div>
-      </div>
-
+      <h4>Trusted by HNI & Premium Clients</h4>
+      <p>
+        We have built long-term relationships with high-value clients
+        through transparency and consistent results.
+      </p>
     </div>
-
   </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="why-box">
+      <div class="why-icon">
+        <i class="bi bi-shield-check"></i>
+      </div>
+      <h4>Transparent Deals & Legal Assistance</h4>
+      <p>
+        Every transaction is handled with complete clarity,
+        backed by expert legal support.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="why-box">
+      <div class="why-icon">
+        <i class="bi bi-building"></i>
+      </div>
+      <h4>World-Class Design & Modern Amenities</h4>
+      <p>
+        Our properties feature premium architecture,
+        smart layouts and luxury amenities.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="why-box">
+      <div class="why-icon">
+        <i class="bi bi-person-check-fill"></i>
+      </div>
+      <h4>Personalized Services for Every Client</h4>
+      <p>
+        We tailor our services to meet your unique needs
+        and investment goals.
+      </p>
+    </div>
+  </div>
+
+</div>
 </section>
+
 
 
 
@@ -636,19 +661,19 @@
     <div class="row align-items-center justify-content-center g-4">
 
       <div class="col-6 col-md-3">
-        <img src="images/partner1.png" class="partner-logo" alt="Partner 1">
+        <img src="./assest/images/partner1.png" class="partner-logo" alt="Partner 1">
       </div>
 
       <div class="col-6 col-md-3">
-        <img src="images/partner2.png" class="partner-logo" alt="Partner 2">
+        <img src="./assest/images/partner2.png" class="partner-logo" alt="Partner 2">
       </div>
 
       <div class="col-6 col-md-3">
-        <img src="images/partner3.png" class="partner-logo" alt="Partner 3">
+        <img src="./assest/images/partner3.png" class="partner-logo" alt="Partner 3">
       </div>
 
       <div class="col-6 col-md-3">
-        <img src="images/partner4.png" class="partner-logo" alt="Partner 4">
+        <img src="./assest/images/partner4.png" class="partner-logo" alt="Partner 4">
       </div>
 
     </div>
@@ -659,7 +684,7 @@
 
 
 
-<?php include "./components/footer.php"; ?> 
+<?php include "./assest/components/footer.php"; ?> 
 
 
 
