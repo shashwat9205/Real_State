@@ -105,36 +105,35 @@
 
       <div class="modal-body">
 
-        <form>
+       <form action="assest/components/enquiry.php" method="POST">
+
+
 
           <div class="mb-3">
-            <input type="text" class="form-control enquire-input"
+            <input type="text" class="form-control enquire-input" name="full_name"
               placeholder="Full Name*" required>
           </div>
 
           <div class="mb-3">
-            <input type="email" class="form-control enquire-input"
+            <input type="email" name="email" class="form-control enquire-input"
               placeholder="Email Address*" required>
           </div>
 
           <div class="mb-3">
-            <input type="tel" class="form-control enquire-input"
+            <input type="tel" name="phone" class="form-control enquire-input"
               placeholder="Phone Number">
           </div>
 
           <div class="mb-3">
-            <textarea class="form-control enquire-input"
+            <textarea class="form-control enquire-input" name="message"
               rows="4" placeholder="Your Message"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary w-100">
             Submit Enquiry
           </button>
-
         </form>
-
       </div>
-
     </div>
   </div>
 </div>

@@ -1,3 +1,11 @@
+<?php
+include("db_connect.php");
+
+$query = "SELECT * FROM properties ORDER BY id DESC LIMIT 4";
+$result = mysqli_query($conn, $query);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,32 +47,6 @@
 
       </div>
       
-
-      <div class="row justify-content-center">
-       <div class="col-lg-8 ">
-      <div class="hero-search p-3 mt-4 ">
-         
-        <div class="row g-2">
-          <div class="col-lg-3">
-            <select class="form-select">
-              <option>Apartments</option>
-              <option>Villa</option>
-              <option>House</option>
-            </select>
-          </div>
-
-          <div class="col-lg-6">
-            <input type="text" class="form-control" placeholder="Search location...">
-          </div>
-
-          <div class="col-lg-3">
-            <button class="btn btn-primary w-100">Search</button>
-          </div>
-        </div>
-
-      </div>
-      </div>
-      </div>
       
 
     </div>
@@ -74,145 +56,55 @@
 
 
   <!-- featured -->
-  <section class="featured-section py-5 px-5">
+   <section class="featured-section py-5 px-5">
     <div class="containerr">
 
 
       <div class="d-flex justify-content-between align-items-center mb-5">
         <h1 class="fw-bold">Featured Properties</h1>
         <div class=" text-primary fw-semibold">
-          🏠 <a href="property.php" class="section-link">View more</a>
+          🏠 1,300+ AVAILABLE PROPERTIES
         </div>
       </div>
 
       <div class="row g-3">
+        <?php
+        include 'admin/config.php';
+        $select = mysqli_query($conn, "SELECT * FROM `property`");
+        while ($row = mysqli_fetch_assoc($select)) {
+        ?>
 
+          <div class="col-lg-3 col-md-6">
+            <div class="card property-card2 h-100">
 
-        <div class="col-lg-3 col-md-6">
-          <div class="card property-card2 h-100">
+              <div class="property-img2">
+                <img src="admin/<?= $row['image']; ?>" class="card-img-top" alt="property2">
 
-            <div class="property-img2">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top" alt="property2">
-
-              <span class="badge bg-success badge-featured">FEATURED</span>
-              <span class="badge bg-danger badge-status">SOLD</span>
-            </div>
-
-            <div class="card-body">
-
-
-              <h6 class="fw-bold">
-                <a href="property-details.html" class="property-link2">
-                  8480 Sulphur Springs Drive
-                </a>
-              </h6>
-
-              <p class="text-muted small mb-3">Brooklyn, NY 11234</p>
-
-              <div class="property-info2 d-flex justify-content-between small text-muted">
-                <span>🏢 3030 sq ft</span>
-                <span>🛏 8 Rooms</span>
-                <span>📅 2016</span>
+                <span class="badge bg-success badge-featured"><?= $row['featured1']; ?></span>
+                <span class="badge bg-danger badge-status"><?= $row['featured2']; ?></span>
               </div>
 
-            </div>
-          </div>
-        </div>
+              <div class="card-body">
 
 
-        <div class="col-lg-3 col-md-6">
-          <div class="card property-card2 h-100">
+                <h6 class="fw-bold">
+                  <a href="property-details.html" class="property-link2">
+                    <?= $row['title'] ?>
+                  </a>
+                </h6>
 
-            <div class="property-img2">
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="card-img-top" alt="property2">
+                <p class="text-muted small mb-3"><?= $row['para']; ?></p>
 
-              <span class="badge bg-success badge-featured">FEATURED</span>
-              <span class="badge bg-warning text-dark badge-status">RENT</span>
-            </div>
+                <div class="property-info2 d-flex justify-content-between small text-muted">
+                  <span>🏢 <?= $row['sq_fit']; ?> sq ft</span>
+                  <span>🛏 <?= $row['rooms']; ?> Rooms</span>
+                  <span>📅 <?= $row['year'] ?></span>
+                </div>
 
-            <div class="card-body">
-
-              <h6 class="fw-bold">
-                <a href="property-details.html" class="property-link2">
-                  764 W. Manor Station Drive
-                </a>
-              </h6>
-
-              <p class="text-muted small mb-3">Elmhurst, NY 11370</p>
-
-              <div class="property-info2 d-flex justify-content-between small text-muted">
-                <span>🏢 3445 sq ft</span>
-                <span>🛏 4 Rooms</span>
-                <span>📅 2008</span>
               </div>
-
             </div>
           </div>
-        </div>
-
-
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card property-card2 h-100">
-
-            <div class="property-img2">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top" alt="property2">
-
-              <span class="badge bg-success badge-featured">FEATURED</span>
-              <span class="badge bg-danger badge-status">SOLD</span>
-            </div>
-
-            <div class="card-body">
-
-
-              <h6 class="fw-bold">
-                <a href="property-details2.html" class="property-link2">
-                  8480 Sulphur Springs Drive
-                </a>
-              </h6>
-
-              <p class="text-muted small mb-3">Brooklyn, NY 11234</p>
-
-              <div class="property-info2 d-flex justify-content-between small text-muted">
-                <span>🏢 3030 sq ft</span>
-                <span>🛏 8 Rooms</span>
-                <span>📅 2016</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card property-card2 h-100">
-
-            <div class="property-img2">
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="card-img-top" alt="property2">
-
-              <span class="badge bg-success badge-featured">FEATURED</span>
-              <span class="badge bg-warning text-dark badge-status">RENT</span>
-            </div>
-
-            <div class="card-body">
-
-              <h6 class="fw-bold">
-                <a href="property-details.html" class="property-link2">
-                  764 W. Manor Station Drive
-                </a>
-              </h6>
-
-              <p class="text-muted small mb-3">Elmhurst, NY 11370</p>
-
-              <div class="property-info2 d-flex justify-content-between small text-muted">
-                <span>🏢 3445 sq ft</span>
-                <span>🛏 4 Rooms</span>
-                <span>📅 2008</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        <?php } ?>
 
       </div>
     </div>
@@ -228,33 +120,41 @@
   <div class="container">
 
     <div class="d-flex justify-content-between align-items-center mb-5">
-      <h2 class="fw-bold">Recent Properties for Sold</h2>
-      <a href="property.php" class="section-link">ALL PROPERTIES FOR SOLD</a>
+      <h2 class="fw-bold">Recent Properties for Sale</h2>
+      <a href="property.php" class="section-link">ALL PROPERTIES FOR SALE</a>
     </div>
 
     <div class="row g-4">
+
+
+    <?php
+        include 'admin/config.php';
+        $select = mysqli_query($conn, "SELECT * FROM `properties`");
+        while ($row = mysqli_fetch_assoc($select)) {
+        ?>
+    
 
       
       <div class="col-lg-3 col-md-6">
         <div class="recent-card">
 
           <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="">
-            <span class="badge bg-danger status-badge">SOLD</span>
+            <img src="admin/<?= $row['image']; ?>" class="card-img-top" alt="property2">
+            <span class="badge bg-success badge-featured"><?= $row['feature']; ?></span>
           </div>
 
           <div class="recent-body">
             <h6>
               <a href="property-details.html" class="property-link2">
-                Villa called Archangel
-              </a>
+                    <?= $row['title'] ?>
+                  </a>
             </h6>
 
             <div class="property-icons2">
-              <span>🛏 3</span>
-              <span>🛁 1</span>
-              <span>📅 2019</span>
-              <span>🚗 1</span>
+              <span>🛏 <?= $row['rooms']; ?></span>
+              <span>🛁 <?= $row['baths']; ?></span>
+              <span>📅 <?= $row['yearEST']; ?></span>
+              <span>🚗 <?= $row['garage']; ?></span>
             </div>
           </div>
 
@@ -262,79 +162,9 @@
       </div>
 
      
-      <div class="col-lg-3 col-md-6">
-        <div class="recent-card">
-          <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
-            <span class="badge bg-danger status-badge">SOLD</span>
-          </div>
-          <div class="recent-body">
-            <h6>
-              <a href="property-details.html" class="property-link2">
-                House on the Hollywood
-              </a>
-            </h6>
-            <div class="property-icons2">
-              <span>🛏 3</span>
-              <span>🛁 2</span>
-              <span>📅 2017</span>
-              <span>🚗 1</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
      
 
-      <div class="col-lg-3 col-md-6">
-        <div class="recent-card">
-
-          <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="">
-            <span class="badge bg-danger status-badge">SOLD</span>
-          </div>
-
-          <div class="recent-body">
-            <h6>
-              <a href="property-details.html" class="property-link2">
-                Villa called Archangel
-              </a>
-            </h6>
-
-            <div class="property-icons2">
-              <span>🛏 3</span>
-              <span>🛁 1</span>
-              <span>📅 2019</span>
-              <span>🚗 1</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-     
-      <div class="col-lg-3 col-md-6">
-        <div class="recent-card">
-          <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
-            <span class="badge bg-danger status-badge">SOLD</span>
-          </div>
-          <div class="recent-body">
-            <h6>
-              <a href="property-details.html" class="property-link2">
-                House on the Hollywood
-              </a>
-            </h6>
-            <div class="property-icons2">
-              <span>🛏 3</span>
-              <span>🛁 2</span>
-              <span>📅 2017</span>
-              <span>🚗 1</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
+<?php } ?>
     </div>
   </div>
 </section>
@@ -343,124 +173,6 @@
 
   <!-- rent-section   -->
 
-
-<section class="recent-section py-5">
-  <div class="container">
-
-    <div class="d-flex justify-content-between align-items-center mb-5">
-      <h2 class="fw-bold">Recent Properties for Rent</h2>
-      <a href="property.php" class="section-link">ALL PROPERTIES FOR RENT</a>
-    </div>
-
-    <div class="row g-4">
-
-    
-      <div class="col-lg-3 col-md-6">
-        <div class="recent-card">
-
-          <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-            <span class="badge bg-success status-badge">RENT</span>
-          </div>
-
-          <div class="recent-body">
-            <h6>
-              <a href="property-details.html" class="property-link2">
-                Modern House for Rent
-              </a>
-            </h6>
-
-            <div class="property-icons2">
-              <span>🛏 4</span>
-              <span>🛁 2</span>
-              <span>📅 2018</span>
-              <span>🚗 2</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="recent-card">
-
-          <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-            <span class="badge bg-success status-badge">RENT</span>
-          </div>
-
-          <div class="recent-body">
-            <h6>
-              <a href="property-details.html" class="property-link2">
-                Modern House for Rent
-              </a>
-            </h6>
-
-            <div class="property-icons2">
-              <span>🛏 4</span>
-              <span>🛁 2</span>
-              <span>📅 2018</span>
-              <span>🚗 2</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="recent-card">
-
-          <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-            <span class="badge bg-success status-badge">RENT</span>
-          </div>
-
-          <div class="recent-body">
-            <h6>
-              <a href="property-details.html" class="property-link2">
-                Modern House for Rent
-              </a>
-            </h6>
-
-            <div class="property-icons2">
-              <span>🛏 4</span>
-              <span>🛁 2</span>
-              <span>📅 2018</span>
-              <span>🚗 2</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="recent-card">
-
-          <div class="recent-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-            <span class="badge bg-success status-badge">RENT</span>
-          </div>
-
-          <div class="recent-body">
-            <h6>
-              <a href="property-details.html" class="property-link2">
-                Modern House for Rent
-              </a>
-            </h6>
-
-            <div class="property-icons2">
-              <span>🛏 4</span>
-              <span>🛁 2</span>
-              <span>📅 2018</span>
-              <span>🚗 2</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- looking -->

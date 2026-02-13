@@ -100,26 +100,26 @@ Every client journey begins with a conversation. We take the time to understand 
       <div class="col-lg-8">
         <h3 class="mb-4">Feedback Form</h3>
 
-        <form>
+        <form action="./feedback_db.php" method="POST">
           <div class="row g-3">
 
             <div class="col-md-6">
-              <input type="text" class="form-control contact-input"
+              <input type="text" name="full_name" class="form-control contact-input"
                 placeholder="First Name, Last Name*" required>
             </div>
 
             <div class="col-md-6">
-              <input type="email" class="form-control contact-input"
+              <input type="email" name="email" class="form-control contact-input"
                 placeholder="Your Email Address*" required>
             </div>
 
             <div class="col-md-6">
-              <input type="text" class="form-control contact-input"
+              <input type="text" name="phone" class="form-control contact-input"
                 placeholder="Your Phone">
             </div>
 
             <div class="col-md-6">
-              <textarea class="form-control contact-input"
+              <textarea class="form-control contact-input" name="message"
                 rows="4" placeholder="Your Message"></textarea>
             </div>
 

@@ -36,96 +36,38 @@
   <div class="container">
     <div class="row">
 
-     
-      <div class="col-lg-8">
-
-        <div class="row g-4">
-
-         
-          <div class="col-md-6">
+         <?php
+        include 'admin/config.php';
+        $select = mysqli_query($conn, "SELECT * FROM `blog_main`");
+        while ($row = mysqli_fetch_assoc($select)) {
+        ?>
+          <div class="col-md-4">
             <div class="blog-card">
-              <img src="./assest/images/about-banner.png" class="img-fluid">
+              <img src="admin/<?= $row['image']; ?>" class="img-fluid">
               <div class="blog-content">
-                <span class="blog-date">March 20, 2026</span>
+                <span class="blog-date"><?= $row['blog_date'] ?></span>
                 <h5>
                   <a href="blog-details.html">
-                    Top 10 Tips for First-Time Home Buyers
+                    <?= $row['title']; ?>
                   </a>
                 </h5>
                 <p>
-                  Discover expert advice to help you navigate your first home purchase confidently.
+                  <?= $row['para']; ?>
                 </p>
                 <a href="blog-details.html" class="read-more">Read More →</a>
               </div>
             </div>
           </div>
-
-          
-          <div class="col-md-6">
-            <div class="blog-card">
-              <img src="./assest/images/about-banner.png" class="img-fluid">
-              <div class="blog-content">
-                <span class="blog-date">March 15, 2026</span>
-                <h5>
-                  <a href="blog-details.html">
-                    Real Estate Market Trends in 2026
-                  </a>
-                </h5>
-                <p>
-                  A complete breakdown of where the housing market is heading this year.
-                </p>
-                <a href="blog-details.html" class="read-more">Read More →</a>
-              </div>
-            </div>
-          </div>
+<?php } ?>
 
         </div>
-
-      
-        <nav class="mt-5">
-          <ul class="pagination">
-            <li class="page-item active"><a class="page-link">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-          </ul>
-        </nav>
-
-      </div>
-
-
-     
-      <div class="col-lg-4">
-
-        
-        <div class="sidebar-box mb-4">
-          <h5>Search</h5>
-          <input type="text" class="form-control" placeholder="Search blog...">
-        </div>
-
-       
-        <div class="sidebar-box mb-4">
-          <h5>Categories</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Market Trends</a></li>
-            <li><a href="#">Buying Guide</a></li>
-            <li><a href="#">Selling Tips</a></li>
-            <li><a href="#">Investment</a></li>
-          </ul>
-        </div>
-
-        
-        <div class="sidebar-box">
-          <h5>Recent Posts</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">How to Stage Your Home for Sale</a></li>
-            <li><a href="#">Best Cities for Property Investment</a></li>
-            <li><a href="#">Understanding Mortgage Rates</a></li>
-          </ul>
-        </div>
-
-      </div>
 
     </div>
+
+        </div>
+
+
+       
   </div>
 </section>
 
